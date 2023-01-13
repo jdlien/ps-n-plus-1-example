@@ -1,11 +1,4 @@
 <?php
-use League\CommonMark\Environment\Environment;
-use League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension;
-use League\CommonMark\Extension\CommonMark\Node\Block\FencedCode;
-use League\CommonMark\Extension\Table\TableExtension;
-use League\CommonMark\MarkdownConverter;
-use Spatie\CommonMarkHighlighter\FencedCodeRenderer;
-
 
 require '../vendor/autoload.php';
 
