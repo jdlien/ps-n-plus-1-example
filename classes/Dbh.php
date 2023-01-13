@@ -18,7 +18,7 @@ class Dbh
         // Try to read the database configuration .ini file and show an error if it can not be found.
         // Set the appropriate database settings in the .db.ini file.
         try {
-            $config = parse_ini_file('.db.ini');
+            $config = parse_ini_file('.env');
             if (!$config) {
                 echo '<pre><code style="color:red;">.db.ini file could not be found.';
                 echo '<br><br>Ensure the correct path is set in classes/Dbh.php</code></pre>';
