@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "dev": "npx tailwindcss -i ./css/src.css -o ./public/css/style.css -m -w",
-    "build": "npx tailwindcss -i ./css/src.css -o ./public/css/style.css -m"
+    "dev": "npx tailwindcss -i ./css/src.css -o api/css/style.css -m -w",
+    "build": "npx tailwindcss -i ./css/src.css -o api/css/style.css -m"
   },
   "devDependencies": {
     "@prettier/plugin-php": "^0.18.9",
