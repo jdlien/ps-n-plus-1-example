@@ -7,10 +7,10 @@ use League\CommonMark\MarkdownConverter;
 use Spatie\CommonMarkHighlighter\FencedCodeRenderer;
 
 
-require './vendor/autoload.php';
+require '../vendor/autoload.php';
 
 $pageTitle = 'Table of Contents';
-include 'includes/header.php';
+include '../includes/header.php';
 
 $nPlus1Pages = array(
     [
@@ -67,4 +67,4 @@ $nPlus1Pages = array(
 
 <?php
 
-include 'includes/footer.php';
+include '../includes/footer.php';
