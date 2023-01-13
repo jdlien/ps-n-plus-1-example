@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .striped tr:nth-child(even) {
+        @apply bg-gray-500/20
+    }
+}
