@@ -1,6 +1,7 @@
 <?php
+
 $pageTitle = 'List of Categories with Items for Each';
-include "includes/header.php";
+include "header.php";
 
 /**
  * An example of an n+1 query problem with additional counts.

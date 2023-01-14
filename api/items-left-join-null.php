@@ -1,6 +1,9 @@
 <?php
+
+
+
 $pageTitle = 'Items without Categories (LEFT JOIN WHERE key NULL)';
-include "includes/header.php";
+include "header.php";
 
 /**
  * Show example of a left join showing items without categories
@@ -60,4 +63,4 @@ include "includes/header.php";
 </table>
 <?php
 
-include 'includes/footer.php';
+include 'footer.php';

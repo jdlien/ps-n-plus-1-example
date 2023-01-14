@@ -1,6 +1,9 @@
 <?php
+
+
+
 $pageTitle = 'All Items with Categories (RIGHT JOIN)';
-include "includes/header.php";
+include "header.php";
 
 /**
  * Show a simple example of a right join that shows the items with categories,
@@ -60,4 +63,4 @@ include "includes/header.php";
 </table>
 <?php
 
-include 'includes/footer.php';
+include 'footer.php';

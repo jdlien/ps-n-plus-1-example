@@ -1,6 +1,9 @@
 <?php
+
+
+
 $pageTitle = 'List of Categories with Items for Each';
-include "includes/header.php";
+include "header.php";
 
 /**
  * Show how to solve n+1 problem by using a LEFT JOIN.
@@ -75,4 +78,4 @@ include "includes/header.php";
 </table>
 <?php
 
-include 'includes/footer.php';
+include 'footer.php';

@@ -1,6 +1,9 @@
 <?php
+
+
+
 $pageTitle = 'Items without Categories, Categories without Items (OUTER JOIN with NULL keys)';
-include "includes/header.php";
+include "header.php";
 
 /**
  * Shows how to emulate a FULL OUTER JOIN without the inner part MySQL,
@@ -72,4 +75,4 @@ include "includes/header.php";
 </table>
 <?php
 
-include 'includes/footer.php';
+include 'footer.php';

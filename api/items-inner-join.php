@@ -1,6 +1,9 @@
 <?php
+
+
+
 $pageTitle = 'List of Items with Categories (INNER JOIN)';
-include "includes/header.php";
+include "header.php";
 
 /**
  * Show a simple example of an inner join that shows the category name for each item
@@ -60,4 +63,4 @@ include "includes/header.php";
 </table>
 <?php
 
-include 'includes/footer.php';
+include 'footer.php';

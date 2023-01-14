@@ -1,9 +1,7 @@
 <?php
 
-require '../vendor/autoload.php';
-
 $pageTitle = 'Table of Contents';
-include '../includes/header.php';
+include 'header.php';
 
 $nPlus1Pages = array(
     [
@@ -60,4 +58,4 @@ $nPlus1Pages = array(
 
 <?php
 
-include '../includes/footer.php';
+include 'footer.php';

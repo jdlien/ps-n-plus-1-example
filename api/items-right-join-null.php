@@ -1,6 +1,9 @@
 <?php
+
+
+
 $pageTitle = 'Categories without Items (RIGHT JOIN WHERE key NULL)';
-include "includes/header.php";
+include "header.php";
 
 /**
  * Show a right join that shows the categories with no items.
@@ -60,4 +63,4 @@ include "includes/header.php";
 </table>
 <?php
 
-include 'includes/footer.php';
+include 'footer.php';

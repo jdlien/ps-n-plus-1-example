@@ -1,6 +1,5 @@
 <?php
 
-
 /**
  * The root class for data-access classes. A connect() method allows access to a specified database.
  * Configured to use the DB in UTC, so when retrieving times, they should be passed to a JS date
@@ -18,7 +17,19 @@ class Dbh
         // Try to read the database configuration .ini file and show an error if it can not be found.
         // Set the appropriate database settings in the .db.ini file.
         try {
-            $config = parse_ini_file('.env');
+            // read vercel env vars
+            if (isset($_ENV['VERCEL_ENV'])) {
+                $config = [
+                    'DB_HOST' => $_ENV['PLANETSCALE_DB_HOST'],
+                    'DB_PORT' => $_ENV['DB_PORT'] ?? 3306,
+                    'DB_NAME' => $_ENV['PLANETSCALE_DB'],
+                    'DB_USER' => $_ENV['PLANETSCALE_DB_USERNAME'],
+                    'DB_PASSWORD' => $_ENV['PLANETSCALE_DB_PASSWORD'],
+                    'DB_SSL_CA' => $_ENV['PLANETSCALE_SSL_CERT_PATH'],
+                ];
+            } else {
+                $config = parse_ini_file('.env');
+            }
             if (!$config) {
                 echo '<pre><code style="color:red;">.db.ini file could not be found.';
                 echo '<br><br>Ensure the correct path is set in classes/Dbh.php</code></pre>';

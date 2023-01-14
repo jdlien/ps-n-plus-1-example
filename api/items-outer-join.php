@@ -1,6 +1,9 @@
 <?php
+
+
+
 $pageTitle = 'All Items with Categories (RIGHT JOIN)';
-include "includes/header.php";
+include "header.php";
 
 /**
  * Shows how to emulate a FULL OUTER JOIN in MySQL,
@@ -71,4 +74,4 @@ include "includes/header.php";
 </table>
 <?php
 
-include 'includes/footer.php';
+include 'footer.php';

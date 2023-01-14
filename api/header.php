@@ -1,8 +1,8 @@
 <?php
 declare(strict_types=1);
 
-// automatically load any used classes
-include_once "class-autoload.php";
+// Load the database handler class
+include_once "Dbh.php";
 ?>
 
 <!DOCTYPE html>
